@@ -1,0 +1,192 @@
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo h1 {
+    width: 14%;
+  }
+  .social_link {
+    width: 13%;
+  }
+  .experience_item_box {
+    width: 46%;
+  }
+  .project_list {
+    width: 28%;
+  }
+  .about_img {
+    height: 280px;
+    width: 280px;
+  }
+  .details {
+    padding-left: 0;
+  }
+  .counting span {
+    right: 45px;
+  }
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (min-width: 768px) {
+  .social_link {
+    float: right;
+    width: 19%;
+    margin-top: 12px;
+    transition: 0.3s ease;
+    position: absolute;
+    right: -141px;
+    top: 7px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .slicknav_btn {
+    margin-top: -8px;
+  }
+  .slicknav_menu {
+    display: block;
+    background: transparent;
+  }
+  .slicknav_nav {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #22232a;
+    margin-top: 58px;
+  }
+  .social_link {
+    width: 64%;
+  }
+  .social_link a {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 537px) {
+  .details2 {
+    margin-left: 0;
+  }
+}
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  ul.navbar-nav {
+    display: none;
+  }
+  /* .social_link {
+    display: none;
+  } */
+  .about_img {
+    height: 260px;
+    width: 100%;
+  }
+  .about_img img {
+    height: 260px;
+    width: 100%;
+  }
+  .header_item {
+    top: 70%;
+  }
+  .experience_item_box {
+    width: auto;
+  }
+  .project_list {
+    width: 42%;
+  }
+  .counting span {
+    right: 170px;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .contact_form {
+    width: 100%;
+  }
+  input {
+    width: 45%;
+  }
+}
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+@media only screen and (max-width: 479px) {
+  ul.navbar-nav {
+    display: none;
+  }
+  /* .social_link {
+    display: none;
+  } */
+  .about_img {
+    height: 260px;
+    width: 100%;
+  }
+  .about_item {
+    text-align: center;
+    float: left;
+    padding: 0;
+    padding-top: 20px;
+  }
+  .about_img img {
+    height: 260px;
+    width: 100%;
+  }
+  .header_item {
+    top: 70%;
+    width: 100%;
+  }
+  .experience_item_box {
+    width: 100%;
+    margin-left: 0;
+  }
+  .project_list {
+    width: 89%;
+  }
+  .counting span {
+    right: 100px;
+  }
+  .hire_item {
+    width: 100%;
+  }
+  input {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 359px) {
+  .counting span {
+    right: 78px;
+  }
+}
+@media only screen and (max-width: 347px) {
+  input {
+    width: 100%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+}
